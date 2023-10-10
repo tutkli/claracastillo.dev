@@ -23,8 +23,8 @@ import { ClaThemeButton } from './theme-button';
         class="inline-block pt-2 text-sm opacity-90 dark:opacity-80 md:text-base"
         style="text-wrap:balance">
         I’m a front-end developer based in Spain, building web applications with
-        Angular, Vue, Solid and TypeScript. I like to play games &amp; watch
-        anime and bother my cat.
+        Angular, Vue, Solid and TypeScript. I like to play games, watch anime
+        and bother my cat.
       </p>
     </div>
     <cla-theme-button />
