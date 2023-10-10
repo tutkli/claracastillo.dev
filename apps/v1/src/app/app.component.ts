@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ClaHeader } from './components/header';
+import { ClaProjects } from './components/projects';
 
 @Component({
+  selector: 'cla-root',
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'claracastillo.dev-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  imports: [ClaHeader, ClaProjects],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: ` <div class="mx-auto mt-4 max-w-[100ch] sm:mt-8 md:mt-14">
+    <section class="container pb-8 pt-6 md:py-10">
+      <cla-header />
+
+      <cla-projects />
+    </section>
+  </div>`,
 })
-export class AppComponent {
-  title = 'v1';
-}
+export class AppComponent {}
