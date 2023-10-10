@@ -3,6 +3,8 @@ const { join } = require('path');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
+  presets: [require('../../libs/ui/tailwind-preset.js')],
   content: [
     join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'),
     ...createGlobPatternsForDependencies(__dirname),
