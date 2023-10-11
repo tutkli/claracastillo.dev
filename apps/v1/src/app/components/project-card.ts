@@ -47,7 +47,7 @@ import {
           claButton
           variant="ghost"
           size="sm"
-          [href]="project.url"
+          [href]="project.html_url"
           target="_blank"
           rel="noopener">
           <ng-icon name="lucideExternalLink" />
@@ -82,7 +82,7 @@ import {
           variant="ghost"
           size="sm"
           class="space-x-1"
-          [href]="project.url"
+          [href]="project.html_url"
           target="_blank"
           rel="noopener">
           <ng-icon name="lucideStar" />
