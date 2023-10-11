@@ -6,7 +6,7 @@ import { ClaThemeButton } from './theme-button';
   standalone: true,
   imports: [ClaThemeButton],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: ` <header class="mb-5 flex w-full justify-between">
+  template: ` <header class="mb-14 flex w-full justify-between">
     <div>
       <span class="text-3xl leading-none sm:text-4xl sm:leading-tight">
         Hi there,
