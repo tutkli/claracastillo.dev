@@ -47,7 +47,6 @@ import {
           claButton
           variant="ghost"
           size="sm"
-          class="relative -right-3"
           [href]="project.url"
           target="_blank"
           rel="noopener">
@@ -77,16 +76,32 @@ import {
         {{ project.language }}
       </div>
 
-      <div class="flex justify-end gap-4">
-        <span class="flex items-center gap-1">
+      <div class="flex justify-end space-x-0.5">
+        <a
+          claButton
+          variant="ghost"
+          size="sm"
+          class="space-x-1"
+          [href]="project.url"
+          target="_blank"
+          rel="noopener">
           <ng-icon name="lucideStar" />
-          {{ project.stargazers_count }}
-        </span>
+          <span>{{ project.stargazers_count }}</span>
+          <span class="sr-only">{{ project.name }} stargazers count</span>
+        </a>
 
-        <span class="flex items-center gap-1">
+        <a
+          claButton
+          variant="ghost"
+          size="sm"
+          class="space-x-1"
+          [href]="'https://github.com/tutkli/' + project.name + '/forks'"
+          target="_blank"
+          rel="noopener">
           <ng-icon name="lucideGitFork" />
-          {{ project.forks_count }}
-        </span>
+          <span>{{ project.forks_count }}</span>
+          <span class="sr-only">{{ project.name }} forks count</span>
+        </a>
       </div>
     </div>
   </section>`,
